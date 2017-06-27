@@ -5,5 +5,5 @@ services:
     image: oss
     container_name: ossimport2
     volumes:
-      - .local_job.cfg:/root/ms/local_job.cfg
+      - ./local_job.cfg:/root/ms/local_job.cfg
       - /data:/data
