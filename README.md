@@ -11,7 +11,7 @@ modify the `docker-compose.yml`
 
 change the `/date:/data` to `/your_local_file:/data`
 
-Start with Docker-compose
+Start with Docker-compose  
 `docker-compose up -d`
 
 Power by
