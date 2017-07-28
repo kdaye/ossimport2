@@ -17,4 +17,4 @@ RUN set -ex \
 
 
 
-CMD ["/bin/sh", "$WORK_DIR/import.sh"]
+CMD ["/bin/sh", "/root/ms/import.sh"]
