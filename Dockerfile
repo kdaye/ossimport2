@@ -13,9 +13,8 @@ RUN set -ex \
     && unzip -UU ./ossimport.zip -d "$WORK_DIR" \
     && rm ossimport.zip \
     && apk del .build-deps \
-    && rm -rf /tmp/* \
-    && cd $WORK_DIR
+    && rm -rf /tmp/* 
 
 
 
-CMD ["/bin/sh", "import.sh"]
+CMD ["/bin/sh", "$WORK_DIR/import.sh"]
