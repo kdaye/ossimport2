@@ -5,7 +5,7 @@ docker - ossimport2
 git clone https://github.com/kdaye/ossimport2.git
 cd ossimport2
 ```
-modify the `local_job.cfg`
+modify the `conf/local_job.cfg`
 
 modify the `docker-compose.yml`
 
@@ -16,6 +16,9 @@ Start with Docker-compose
 
 detail  
 `docker exec ossimport2 java -jar /root/ms/bin/ossimport2.jar -c /root/ms/conf/sys.properties stat detail`
+
+log
+`docker logs ossimport -f`
 
 简介
 

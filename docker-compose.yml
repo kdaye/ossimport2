@@ -3,8 +3,8 @@ services:
   ossimport2:
     restart: unless-stopped
     image: kdaye/ossimport2
-    container_name: ossimport2
+    container_name: oss
     volumes:
-      - ./local_job.cfg:/root/ms/local_job.cfg
+      - ./conf/local_job.cfg:/root/ms/conf/local_job.cfg
       - /data:/data
     network_mode: bridge
