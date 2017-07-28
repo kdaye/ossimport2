@@ -8,9 +8,9 @@ RUN set -ex \
     && apk --update add --no-cache --virtual .build-deps \
        wget \
        unzip \
-    && wget http://import-service-package.oss.aliyuncs.com/ossimport2/ossimport-v2.1-linux.zip \
-    && unzip -UU ./ossimport-v2.1-linux.zip -d "$WORK_DIR" \
-    && rm ossimport-v2.1-linux.zip \
+    && wget http://gosspublic.alicdn.com/ossimport/standalone/ossimport-2.2.0.zip -O ossimport.zip \
+    && unzip -UU ./ossimport.zip -d "$WORK_DIR" \
+    && rm ossimport.zip \
     && apk del .build-deps \
     && rm -rf /tmp/* \
     && cd $WORK_DIR
