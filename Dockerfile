@@ -16,8 +16,6 @@ RUN set -ex \
     && rm -rf /tmp/* \
     && cd $WORK_DIR
 
-ADD start.sh start.sh
 
-RUN chmod +x start.sh
 
-CMD ["/bin/sh", "start.sh"]
+CMD ["/bin/sh", "import.sh"]
